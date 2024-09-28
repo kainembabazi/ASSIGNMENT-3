@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+
+.header input[type="text"] {
+    width: 15%; 
+    padding: 10px; 
+    border: 2px solid #7a84d2; 
+    border-radius: 5px; 
+    background-color: white; 
+    color: white;
+ }
+
+/* Placeholder style */
+.header input[type="text"]::placeholder {
+    color: lightblue; 
+    opacity: 1; 
+}
+
+
+body{
+    background-color: black;
+}
+
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(60% - 30vh);
+    height: 10vh;
+    background-position: center;
+    overflow: hidden;
+    margin-left: 15vh;
+    margin-right: 15vh; 
+    max-height: 300px;
+    background-color: white;
+}
+
+.heading{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 30px;
+    margin-left: 20vh;
+}
+
+
+.circle-image img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 20px;
+  
+}
+.circle-image {
+    display: inline-flex;
+    align-items: center; 
+    
+}
+
+.circle-image img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+    background-color: white;
+}
+
+.circle-image p {
+    color: white;
+    margin: 0; 
+    font-size: 16px; 
+}
+    .image-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .orange-image {
+        width: 100%;
+        height: auto;
+    }
+    .centered-input {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 300px; 
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+    
+    
+    .input-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; 
+    }
+    
+    .bold-text {
+        font-size: 30px; 
+        color: white;
+        margin: 0;
+        font-weight: bold;
+        padding: 20px;
+    }
+    
+    .regular-text {
+        color: grey; /* Customize the second line */
+        margin: 0;
+        font-size: 16px;
+        color: white;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 70px; /* Adjust the height */
+        opacity: 0; /* Make the textarea invisible */
+        background: transparent;
+        border: none;
+        resize: none;
+        z-index: 1; /* Keep textarea clickable */
+    }
+    .image-container{
+        width: 82%;
+    }
+    button {
+        padding: 10px 25px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 15px; /* Adjust border radius */
+        cursor: pointer;
+        text-align: center;
+        margin-left: 300px; /* Moves the button to the right */
+    }
+    
+    button a {
+        color: rgb(7, 6, 6);
+        text-decoration: none;
+    }
+    
+    button:hover {
+        background-color: #0056b3; /* Darker background on hover */
+    }
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    font-size: large;
+}
+
+.navbar ul li a {
+    color: rgb(237, 230, 230);
+    text-decoration: none;
+    padding: 0px 40px;
+    display: block;
+    justify-content: right;
+} 
+.header p{
+    color: black;
+    text-align: center;
+    border: 1px solid white;
+    width: 80%;
+    padding: 10px;
+    margin-left: 15vh;
+    margin-right: 10vh;
+    background-color: white;
+}
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./restaurant_layout.css">
+</head>
+<body>
+    <div class="header">
+        <p>Do You Want to Learn Marketing or Coding? 
+            <input type="text" id="text" name="text" placeholder="Yes I Want to Learn">
+        </p>
+    </div>
+
+    <div class="content"></div>
+    
+    <nav class="navbar">
+        <div class="circle-image">
+            <img src="./image.png" alt="Man's Head">
+            <p style="color: white;">MilesSebesta.Com</p>
+        </div>
+        <ul>
+            <li><a href="#teaching">Teaching/Speaking</a></li>
+            <li><a href="#web design" style="color: lightblue;">Web Design</a></li>
+            <li><a href="#animation">Animation</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        >
+    </nav>
+
+    <div class="image-container">
+        <img src="./image orange.jp.jpg" alt="Orange Image" class="orange-image">
+        <div class="centered-input">
+            <div class="input-box">
+                <h1 class="bold-text">Web Design Visalia</h1>
+                <p class="regular-text">Locally grown Visalia Code</p>
+            </div>
+            <textarea></textarea>
+        </div>
+    </div>
+
+    <div class="heading">
+        <p><ins>5 HTML Practice Projects for Beginners</ins> <button type="button"><a href="Visit.html">Visit</a></button></p>
+       
+    </div>
+    
+    <p style="font-size: 20px; color: rgb(172, 170, 170); margin-left: 130px;">
+        Image may be subject to Copyright. 
+        <b>Learn more</b>
+    </p>
+    
+    </div>
+</body>
+</html>
